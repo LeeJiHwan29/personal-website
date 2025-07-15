@@ -2,53 +2,52 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Trivia - BMI Calculator</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website - Trivia</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <header>Trivia Page</header>
+    <header class="header">My Website</header>
 
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="portfolio.html">Portfolio</a> |
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
         <a href="trivia.html">Trivia</a>
     </nav>
 
-    <div class="container">
-        <aside class="left">
+    <div class="layout">
+        <aside class="left-sidebar">
             <h3>Useful Links</h3>
             <ul>
-                <li><a href="https://www.healthline.com" target="_blank">Health Info</a></li>
+                <li><a href="https://javascript.info" target="_blank">JavaScript Info</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JS MDN</a></li>
             </ul>
         </aside>
 
-        <main>
+        <main class="content">
             <h2>BMI Calculator</h2>
-            <label>Height (cm): <input type="number" id="height" /></label><br />
-            <label>Weight (kg): <input type="number" id="weight" /></label><br />
+            <label>Height (cm): <input type="number" id="height"></label><br><br>
+            <label>Weight (kg): <input type="number" id="weight"></label><br><br>
             <button onclick="calculateBMI()">Calculate BMI</button>
-
-            <div id="bmiResult"></div>
+            <p id="bmiResult"></p>
         </main>
 
-        <aside class="right">
+        <aside class="right-sidebar">
             <h3>Contact Me</h3>
             <form>
-                <label>Name: <input type="text"></label><br />
-                <label>Email: <input type="email"></label><br />
-                <label>Message:<br />
-                    <textarea rows="5"></textarea>
-                </label><br />
+                <input type="text" placeholder="Name"><br>
+                <input type="email" placeholder="Email"><br>
+                <textarea placeholder="Message"></textarea><br>
                 <button type="submit">Submit</button>
                 <button type="reset">Clear</button>
             </form>
         </aside>
     </div>
 
-    <footer>
+    <footer class="footer">
         Created July 2025 | <a href="https://twitter.com" target="_blank">Twitter</a>
     </footer>
 </body>

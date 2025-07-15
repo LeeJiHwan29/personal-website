@@ -2,31 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>My Portfolio</header>
+    <header class="header">My Website</header>
 
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="portfolio.html">Portfolio</a> |
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
         <a href="trivia.html">Trivia</a>
     </nav>
 
-    <div class="container">
-        <aside class="left">
+    <div class="layout">
+        <aside class="left-sidebar">
             <h3>Useful Links</h3>
             <ul>
-                <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
                 <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                <li><a href="https://codepen.io" target="_blank">CodePen</a></li>
             </ul>
         </aside>
 
-        <main>
-            <h2>My Works</h2>
+        <main class="content">
+            <h2>My Portfolio</h2>
             <table border="1">
                 <tr>
                     <th>No.</th>
@@ -36,52 +37,50 @@
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>Book 1</td>
-                    <td>Intro to HTML</td>
-                    <td>Jan 2021</td>
+                    <td>HTML Project</td>
+                    <td>First static webpage</td>
+                    <td>Jan 2023</td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>Book 2</td>
-                    <td>CSS Basics</td>
-                    <td>May 2022</td>
+                    <td>CSS Layout</td>
+                    <td>Responsive design</td>
+                    <td>Apr 2023</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>Game 1</td>
-                    <td>Simple JavaScript Game</td>
-                    <td>Feb 2023</td>
+                    <td>JS Game</td>
+                    <td>Interactive trivia quiz</td>
+                    <td>Jul 2023</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>Website</td>
-                    <td>Personal Portfolio</td>
-                    <td>Mar 2024</td>
+                    <td>React App</td>
+                    <td>Task manager app</td>
+                    <td>Dec 2023</td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td>Blog</td>
-                    <td>Weekly Coding Blog</td>
-                    <td>Nov 2024</td>
+                    <td>Portfolio</td>
+                    <td>This very site!</td>
+                    <td>July 2025</td>
                 </tr>
             </table>
         </main>
 
-        <aside class="right">
+        <aside class="right-sidebar">
             <h3>Contact Me</h3>
             <form>
-                <label>Name: <input type="text"></label><br />
-                <label>Email: <input type="email"></label><br />
-                <label>Message:<br />
-                    <textarea rows="5"></textarea>
-                </label><br />
+                <input type="text" placeholder="Name"><br>
+                <input type="email" placeholder="Email"><br>
+                <textarea placeholder="Message"></textarea><br>
                 <button type="submit">Submit</button>
                 <button type="reset">Clear</button>
             </form>
         </aside>
     </div>
 
-    <footer>
+    <footer class="footer">
         Created July 2025 | <a href="https://linkedin.com" target="_blank">LinkedIn</a>
     </footer>
 </body>

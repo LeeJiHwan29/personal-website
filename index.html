@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,52 +5,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Website - Home</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <header>
-        <h1>My Website</h1>
-    </header>
+    <header class="header">My Website</header>
 
-    <nav>
+    <nav class="navbar">
         <a href="index.html">Home</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="trivia.html">Trivia</a>
     </nav>
 
-    <div class="container">
+    <div class="layout">
         <aside class="left-sidebar">
             <h3>Useful Links</h3>
             <ul>
-                <li><a href="https://developer.mozilla.org" target="_blank">MDN</a></li>
-                <li><a href="https://w3schools.com" target="_blank">W3Schools</a></li>
+                <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+                <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
             </ul>
         </aside>
 
-        <main>
+        <main class="content">
             <h2>About Me</h2>
-            <p>I am a web development enthusiast who loves building interactive and visually engaging websites. My
-                journey started when I stumbled upon HTML tutorials online. Since then, I've explored CSS for styling
-                and JavaScript for logic. One of my favorite hobbies is creating mini web games and animations during my
-                free time...</p>
-            <img src="me.jpg" alt="My photo" width="300" />
+            <p>Hello! I'm a student passionate about web development, design, and continuous learning. This site
+                showcases my journey and portfolio as part of my coursework at Ritsumeikan University. I enjoy building
+                websites, exploring new technologies, and experimenting with creative projects online.</p>
+            <img src="https://via.placeholder.com/400x200" alt="My photo">
         </main>
 
         <aside class="right-sidebar">
             <h3>Contact Me</h3>
             <form>
-                <input type="text" placeholder="Name" /><br />
-                <input type="email" placeholder="Email" /><br />
-                <textarea placeholder="Message"></textarea><br />
+                <input type="text" placeholder="Name"><br>
+                <input type="email" placeholder="Email"><br>
+                <textarea placeholder="Message"></textarea><br>
                 <button type="submit">Submit</button>
                 <button type="reset">Clear</button>
             </form>
         </aside>
     </div>
 
-    <footer>
-        <p>&copy; July 2025 | <a href="https://yourblog.com">My Blog</a></p>
+    <footer class="footer">
+        Created July 2025 | <a href="https://github.com" target="_blank">GitHub</a>
     </footer>
 </body>
 
