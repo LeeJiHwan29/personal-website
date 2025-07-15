@@ -1,56 +1,58 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lee Jihwan | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>My Website - Home</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
     <header>
-        <h1>Hello, I'm Lee Jihwan</h1>
-        <p>Web Developer | Designer | Tech Enthusiast</p>
+        <h1>My Website</h1>
     </header>
 
     <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="trivia.html">Trivia</a>
     </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Write something about yourself here — skills, education, hobbies, etc.</p>
-    </section>
+    <div class="container">
+        <aside class="left-sidebar">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org" target="_blank">MDN</a></li>
+                <li><a href="https://w3schools.com" target="_blank">W3Schools</a></li>
+            </ul>
+        </aside>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>Project 1 - <a href="#">Link</a></li>
-            <li>Project 2 - <a href="#">Link</a></li>
-            <li>Project 3 - <a href="#">Link</a></li>
-        </ul>
-    </section>
+        <main>
+            <h2>About Me</h2>
+            <p>I am a web development enthusiast who loves building interactive and visually engaging websites. My
+                journey started when I stumbled upon HTML tutorials online. Since then, I've explored CSS for styling
+                and JavaScript for logic. One of my favorite hobbies is creating mini web games and animations during my
+                free time...</p>
+            <img src="me.jpg" alt="My photo" width="300" />
+        </main>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form onsubmit="return sendMessage()">
-            <input type="text" id="name" placeholder="Your Name" required />
-            <input type="email" id="email" placeholder="Your Email" required />
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+        <aside class="right-sidebar">
+            <h3>Contact Me</h3>
+            <form>
+                <input type="text" placeholder="Name" /><br />
+                <input type="email" placeholder="Email" /><br />
+                <textarea placeholder="Message"></textarea><br />
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </form>
+        </aside>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Lee Jihwan. All rights reserved.</p>
+        <p>&copy; July 2025 | <a href="https://yourblog.com">My Blog</a></p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 
 </html>

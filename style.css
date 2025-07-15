@@ -1,127 +1,63 @@
-/* Base Reset */
-* {
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7fa;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Header */
-header {
-    background: linear-gradient(135deg, #4b6cb7, #182848);
-    color: #fff;
+header,
+nav,
+footer {
     text-align: center;
-    padding: 4rem 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+header {
+    background-color: #004d99;
+    color: white;
 }
 
-/* Navigation */
 nav {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 1rem;
-    gap: 2rem;
+    background-color: #cce0ff;
 }
 
 nav a {
-    color: #333;
+    margin: 0 15px;
     text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s;
+    color: #003366;
 }
 
-nav a:hover {
-    color: #4b6cb7;
-}
-
-/* Sections */
-section {
-    background-color: #fff;
-    padding: 3rem 1.5rem;
-    margin: 2rem auto;
-    max-width: 960px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-}
-
-section h2 {
-    color: #4b6cb7;
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-}
-
-section p,
-section ul {
-    font-size: 1rem;
-}
-
-/* Projects */
-ul li {
-    margin-bottom: 0.5rem;
-}
-
-/* Contact Form */
-form {
+.container {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
 }
 
-input,
-textarea {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: border 0.3s;
+.left-sidebar,
+.right-sidebar {
+    width: 20%;
+    padding: 10px;
 }
 
-input:focus,
-textarea:focus {
-    border-color: #4b6cb7;
-    outline: none;
+.left-sidebar {
+    background-color: #f0f8ff;
 }
 
-button {
-    padding: 0.75rem;
-    background: #4b6cb7;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
+.right-sidebar {
+    background-color: #e6f2ff;
 }
 
-button:hover {
-    background: #3b4d91;
+main {
+    width: 60%;
+    padding: 10px;
+    background-color: #ffffff;
 }
 
-/* Footer */
 footer {
-    background: #182848;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 3rem;
-    font-size: 0.9rem;
+    background-color: #004d99;
+    color: white;
+}
+
+form input,
+form textarea {
+    width: 90%;
+    margin-bottom: 10px;
 }

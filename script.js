@@ -1,17 +1,19 @@
-function sendMessage() {
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
+// script.js (for trivia.html later)
+function calculateBMI() {
+    const height = parseFloat(document.getElementById("height").value);
+    const weight = parseFloat(document.getElementById("weight").value);
+    const result = document.getElementById("result");
 
-    if (name && email && message) {
-        alert(`Thank you, ${name}! Your message has been sent.`);
-        // Optionally clear form
-        document.getElementById('name').value = '';
-        document.getElementById('email').value = '';
-        document.getElementById('message').value = '';
+    if (height > 0 && weight > 0) {
+        const bmi = weight / ((height / 100) ** 2);
+        let category = "";
+        if (bmi < 18.5) category = "Underweight";
+        else if (bmi < 24.9) category = "Normal";
+        else if (bmi < 29.9) category = "Overweight";
+        else category = "Obese";
+        result.textContent = `Your BMI is ${bmi.toFixed(2)} (${category})`;
     } else {
-        alert('Please fill out all fields.');
+        result.textContent = "Please enter valid height and weight.";
     }
-
-    return false; // Prevent actual form submission
 }
+
