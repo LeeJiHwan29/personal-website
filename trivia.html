@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Trivia - BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>Trivia Page</header>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="portfolio.html">Portfolio</a> |
+        <a href="trivia.html">Trivia</a>
+    </nav>
+
+    <div class="container">
+        <aside class="left">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="https://www.healthline.com" target="_blank">Health Info</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <h2>BMI Calculator</h2>
+            <label>Height (cm): <input type="number" id="height" /></label><br />
+            <label>Weight (kg): <input type="number" id="weight" /></label><br />
+            <button onclick="calculateBMI()">Calculate BMI</button>
+
+            <div id="bmiResult"></div>
+        </main>
+
+        <aside class="right">
+            <h3>Contact Me</h3>
+            <form>
+                <label>Name: <input type="text"></label><br />
+                <label>Email: <input type="email"></label><br />
+                <label>Message:<br />
+                    <textarea rows="5"></textarea>
+                </label><br />
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </form>
+        </aside>
+    </div>
+
+    <footer>
+        Created July 2025 | <a href="https://twitter.com" target="_blank">Twitter</a>
+    </footer>
+</body>
+
+</html>
